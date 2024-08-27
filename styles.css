@@ -1,0 +1,144 @@
+/* General */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #2d2d2d;
+    color: #abb2bf;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #1e1e1e;
+    color: #abb2bf;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #3e4451;
+}
+
+footer {
+    border-top: 1px solid #3e4451;
+    margin-top: auto;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    background-color: #1e1e1e;
+    border: 1px solid #3e4451;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo para Markdown */
+h1, h2, h3 {
+    color: #e06c75;
+}
+
+a {
+    color: #61afef;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #3e4451;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3e4451;
+    color: #abb2bf;
+}
+
+/* Código */
+pre {
+    background-color: #2c313a;
+    border: 1px solid #3e4451;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+    color: #d4d4d4;
+}
+
+code {
+    color: #e5c07b;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header, footer {
+        font-size: 14px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .container h3 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    header, footer {
+        font-size: 12px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
+
+    .container h3 {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
